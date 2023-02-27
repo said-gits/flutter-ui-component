@@ -1,3 +1,16 @@
+## 0.16.0
+
+- add component gits dialog
+
+## 0.15.0
+
+- add component gits carousel
+- add component gits player
+
+## 0.14.0
+
+- add component gits image picker
+
 ## 0.13.1
 
 - update dependency

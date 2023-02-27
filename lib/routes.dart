@@ -10,9 +10,13 @@ import 'package:gits_flutter_ui_component/pages/component/gits_column_separated/
 import 'package:gits_flutter_ui_component/pages/component/gits_contact/gits_contact_page.dart';
 import 'package:gits_flutter_ui_component/pages/component/gits_container_shadow/gits_container_shadow_page.dart';
 import 'package:gits_flutter_ui_component/pages/component/gits_date_time_picker/gits_date_time_picker_page.dart';
+import 'package:gits_flutter_ui_component/pages/component/gits_dialog/gits_dialog_page.dart';
 import 'package:gits_flutter_ui_component/pages/component/gits_divider_dash/gits_divider_dash_page.dart';
+import 'package:gits_flutter_ui_component/pages/component/gits_image_picker/gits_image_picker_page.dart';
+import 'package:gits_flutter_ui_component/pages/component/gits_player/gits_player_page.dart';
 import 'package:gits_flutter_ui_component/pages/component/gits_row_separated/gits_row_separated_page.dart';
 import 'package:gits_flutter_ui_component/pages/component/gits_search/gits_search_page.dart';
+import 'package:gits_flutter_ui_component/pages/component/gits_carousel/gits_carousel_page.dart';
 import 'package:gits_flutter_ui_component/pages/component/gits_sliver_list_separated/gits_sliver_list_separated_page.dart';
 import 'package:gits_flutter_ui_component/pages/component/gits_star_rating/gits_star_rating_page.dart';
 import 'package:gits_flutter_ui_component/pages/component/gits_status_message/gits_status_message_page.dart';
@@ -27,6 +31,7 @@ import 'package:gits_flutter_ui_component/pages/extension/date_time/date_time_ex
 import 'package:gits_flutter_ui_component/pages/extension/encrypt/encrypt_extension_page.dart';
 import 'package:gits_flutter_ui_component/pages/foundation/typography/typhography_page.dart';
 import 'package:gits_flutter_ui_component/pages/foundation/validator/validator_value_page.dart';
+import 'package:gits_flutter_ui_component/pages/helper/nominal_rupiah/nomimal_rupiah_helper_page.dart';
 import 'package:gits_flutter_ui_component/pages/pages/request_forgot_password/request_forgot_password_page.dart';
 import 'package:gits_flutter_ui_component/pages/pages/reset_pin/reset_pin_page.dart';
 import 'package:gits_flutter_ui_component/pages/pages/splash/splash_page.dart';
@@ -100,6 +105,12 @@ abstract class Routes {
           label: 'Gits Button',
           icon: const Icon(Icons.add),
           child: const GitsButtonPage(),
+        ),
+        Navigation(
+          path: '/gits-dialog',
+          label: 'Gits Dialog',
+          icon: const Icon(Icons.add),
+          child: const GitsDialogPage(),
         ),
         Navigation(
           path: '/gits-text-field',
@@ -215,6 +226,24 @@ abstract class Routes {
           icon: const Icon(Icons.power_input),
           child: const GitsDateTimePickerPage(),
         ),
+        Navigation(
+          path: '/gits-image-picker',
+          label: 'Gits Image Picker',
+          icon: const Icon(Icons.photo_camera),
+          child: const GitsImagePickerPage(),
+        ),
+        Navigation(
+          path: '/gits-player',
+          label: 'Gits Player',
+          icon: const Icon(Icons.photo_camera),
+          child: const GitsPlayerPage(),
+        ),
+        Navigation(
+          path: '/gits-slider',
+          label: 'Gits Slider',
+          icon: const Icon(Icons.photo_camera),
+          child: const GitsSliderPage(),
+        ),
       ],
     ),
     CategoryNavigation(
@@ -260,6 +289,17 @@ abstract class Routes {
           label: 'Encrypt',
           icon: const Icon(Icons.volunteer_activism),
           child: const EncryptExtensionPage(),
+        ),
+      ],
+    ),
+    CategoryNavigation(
+      category: 'Helper',
+      navigations: [
+        Navigation(
+          path: '/nominal_rupiah',
+          label: 'Nominal Rupiah',
+          icon: const Icon(Icons.volunteer_activism),
+          child: const NominalRupiahHelperPage(),
         ),
       ],
     ),

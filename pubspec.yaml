@@ -15,12 +15,14 @@ dependencies:
     sdk: flutter
 
   # components
+  video_player: ^2.5.1
   table_calendar: ^3.0.9
   cached_network_image: ^3.2.3
   shimmer: ^2.0.0
   flutter_svg: ^1.1.6
   device_frame: ^1.1.0
   flutter_markdown: ^0.6.13
+  image_picker: ^0.8.6
   flutter_syntax_view:
     git:
       url: https://github.com/YehudaKremer/flutter_syntax_view.git
@@ -35,6 +37,7 @@ dependencies:
   intl: ^0.18.0
   collection: ^1.16.0
   url_launcher: ^6.1.6
+  permission_handler: ^10.2.0
   equatable: ^2.0.5
   gits_extension: ^0.0.4
   encrypt: ^5.0.1
